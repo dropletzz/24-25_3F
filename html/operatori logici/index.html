@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Operatori logici</title>
+	<link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<h1>Operatori logici</h1>
+
+	<div class="tabelle">
+		<div class="tabella" id="tab5" onclick="toggleTabella(5)">
+			<img src="img/AND.jpeg">
+			<h2>AND</h2>
+			<div class="riga intestazione">
+				<div class="cella">X</div>
+				<div class="cella">Y</div>
+				<div class="cella">X && Y</div>
+			</div>
+			<div class="riga">
+				<div class="cella">1</div>
+				<div class="cella">1</div>
+				<div class="cella">1</div>
+			</div>
+			<div class="riga">
+				<div class="cella">1</div>
+				<div class="cella">0</div>
+				<div class="cella">0</div>
+			</div>
+			<div class="riga">
+				<div class="cella">0</div>
+				<div class="cella">1</div>
+				<div class="cella">0</div>
+			</div>
+			<div class="riga">
+				<div class="cella">0</div>
+				<div class="cella">0</div>
+				<div class="cella">0</div>
+			</div>
+		</div>
+
+		<div class="tabella" id="tab0" onclick="toggleTabella(0)">
+			<img src="img/OR.jpeg">
+			<h2>OR</h2>
+			<div class="riga intestazione">
+				<div class="cella">X</div>
+				<div class="cella">Y</div>
+				<div class="cella">X || Y</div>
+			</div>
+			<div class="riga">
+				<div class="cella">1</div>
+				<div class="cella">1</div>
+				<div class="cella">1</div>
+			</div>
+			<div class="riga">
+				<div class="cella">1</div>
+				<div class="cella">0</div>
+				<div class="cella">1</div>
+			</div>
+			<div class="riga">
+				<div class="cella">0</div>
+				<div class="cella">1</div>
+				<div class="cella">1</div>
+			</div>
+			<div class="riga">
+				<div class="cella">0</div>
+				<div class="cella">0</div>
+				<div class="cella">0</div>
+			</div>
+		</div>
+
+		<div class="tabella"  id="tab1" onclick="toggleTabella(1)">
+			<img src="img/XOR.jpeg">
+			<h2>XOR</h2>
+			<div class="riga intestazione">
+				<div class="cella">X</div>
+				<div class="cella">Y</div>
+				<div class="cella">X ^ Y</div>
+			</div>
+			<div class="riga">
+				<div class="cella">1</div>
+				<div class="cella">1</div>
+				<div class="cella">0</div>
+			</div>
+			<div class="riga">
+				<div class="cella">1</div>
+				<div class="cella">0</div>
+				<div class="cella">1</div>
+			</div>
+			<div class="riga">
+				<div class="cella">0</div>
+				<div class="cella">1</div>
+				<div class="cella">1</div>
+			</div>
+			<div class="riga">
+				<div class="cella">0</div>
+				<div class="cella">0</div>
+				<div class="cella">0</div>
+			</div>
+		</div>
+
+		<div class="tabella"  id="tab2" onclick="toggleTabella(2)">
+			<img src="img/NAND.jpeg">
+			<h2>NAND</h2>
+			<div class="riga intestazione">
+				<div class="cella">X</div>
+				<div class="cella">Y</div>
+				<div class="cella">!(X && Y)</div>
+			</div>
+			<div class="riga">
+				<div class="cella">1</div>
+				<div class="cella">1</div>
+				<div class="cella">?</div>
+			</div>
+			<div class="riga">
+				<div class="cella">1</div>
+				<div class="cella">0</div>
+				<div class="cella">?</div>
+			</div>
+			<div class="riga">
+				<div class="cella">0</div>
+				<div class="cella">1</div>
+				<div class="cella">?</div>
+			</div>
+			<div class="riga">
+				<div class="cella">0</div>
+				<div class="cella">0</div>
+				<div class="cella">?</div>
+			</div>
+		</div>
+
+		<div class="tabella"  id="tab3" onclick="toggleTabella(3)">
+			<img src="img/NOR.jpeg">
+			<h2>NOR</h2>
+			<div class="riga intestazione">
+				<div class="cella">X</div>
+				<div class="cella">Y</div>
+				<div class="cella">!(X || Y)</div>
+			</div>
+			<div class="riga">
+				<div class="cella">1</div>
+				<div class="cella">1</div>
+				<div class="cella">?</div>
+			</div>
+			<div class="riga">
+				<div class="cella">1</div>
+				<div class="cella">0</div>
+				<div class="cella">?</div>
+			</div>
+			<div class="riga">
+				<div class="cella">0</div>
+				<div class="cella">1</div>
+				<div class="cella">?</div>
+			</div>
+			<div class="riga">
+				<div class="cella">0</div>
+				<div class="cella">0</div>
+				<div class="cella">?</div>
+
+			</div>
+		</div>
+
+		<div class="tabella" id="tab4" onclick="toggleTabella(4)">
+			<img src="img/XNOR.jpeg">
+			<h2>XNOR</h2>
+			<div class="riga intestazione">
+				<div class="cella">X</div>
+				<div class="cella">Y</div>
+				<div class="cella">!(X ^ Y)</div>
+			</div>
+			<div class="riga">
+				<div class="cella">1</div>
+				<div class="cella">1</div>
+				<div class="cella">?</div>
+			</div>
+			<div class="riga">
+				<div class="cella">1</div>
+				<div class="cella">0</div>
+				<div class="cella">?</div>
+			</div>
+			<div class="riga">
+				<div class="cella">0</div>
+				<div class="cella">1</div>
+				<div class="cella">?</div>
+			</div>
+			<div class="riga">
+				<div class="cella">0</div>
+				<div class="cella">0</div>
+				<div class="cella">?</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function toggleTabella(n) {
+			let t = document.getElementById("tab"+n);
+			t.classList.toggle("alt");
+		}
+	</script>
+</body>
+
+</html>

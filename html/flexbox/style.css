@@ -1,0 +1,42 @@
+body {
+    /* tolgo i bordi intorno alla pagina */
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quadrato {
+    height: 300px;
+    width: 300px;
+    background-color: #dd0808;
+}
+
+.rettangolo {
+    height: 300px;
+    width: 400px;
+    background-color: #ddb208;
+}

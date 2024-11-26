@@ -1,0 +1,91 @@
+body {
+	text-align: center;
+	background-color: #000;
+	color: white;
+	margin-bottom: 100px;
+}
+
+h1 {
+	color: #aae21b;
+	font-size: 50px;
+	font-family: 'Atari';
+}
+
+h2 {
+	color: #aae21b;
+	font-size: 35px;
+	font-family: 'Atari';
+}
+
+.tabelle {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.tabella {
+	font-size: 21px;
+	width: 500px;
+	height: 300px;
+	position: relative;
+}
+
+.tabella img {
+	width: 490px;
+	height: 290px;
+	border: 5px solid black;
+	
+	position: absolute;
+	left: 0;
+	right: 0;
+
+	opacity: 0.0;
+    transition: opacity 0.35s ease-in;
+}
+
+.tabella.alt img {
+	opacity: 1.0;
+}
+
+.tabella div {
+	font-family: 'PT';
+}
+
+.riga {
+	/* centra (in orizzontale) il contenuto della riga */
+	display: flex;
+	justify-content: center;
+}
+
+.intestazione .cella {
+	font-weight: 600;
+	color: black;
+	background-color: #aae21b;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+}
+
+.cella {
+	width: 130px;
+	height: 35px;
+	border: 2px solid white;
+
+	/* centra (in orizzontale e verticale) il contenuto della cella */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*
+Da qui in poi importo i font da un file
+*/
+@font-face {
+	font-family: 'Atari';
+	src: url('fonts/AtariClassicChunky.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'PT';
+	src: url('fonts/PTMono-Regular.ttf') format('truetype');
+}
