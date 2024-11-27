@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Login</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="contenitore">
+        <form action="#">
+            <label for="form-email">Inserisci email</label><br/>
+            <input id="form-email" type="text"><br/>
+            <label for="form-password">Inserisci password</label><br/>
+            <input id="form-password" type="password"><br/>
+            <button id="form-submit">Invia</button>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        let userEmail = "prova@gmail.com";
+        let userPassword = "password1234";
+
+        let b = document.getElementById("form-submit");
+        b.addEventListener("click", () => {
+            let emailInput = document.getElementById("form-email");
+            let passwordInput = document.getElementById("form-password");
+
+            if (emailInput.value === userEmail && passwordInput.value === userPassword) {
+                alert("sei loggato!");
+            } else {
+                alert("non sei loggato :(");
+            }
+        });
+    </script>
+</body>
+
+</html>
