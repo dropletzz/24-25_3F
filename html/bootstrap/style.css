@@ -1,5 +1,10 @@
 
-#griglia .row .col {
+/*
+seleziona gli elementi con classe "col" che sono 
+dentro ad un elemento con id "griglia"
+*/
+#griglia .col {
     border: 1px solid black;
     height: 50px;
 }
+
