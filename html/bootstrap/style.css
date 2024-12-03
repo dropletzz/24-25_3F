@@ -8,3 +8,14 @@ dentro ad un elemento con id "griglia"
     height: 50px;
 }
 
+
+#carouselExample {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#carouselExample .carousel-item {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
