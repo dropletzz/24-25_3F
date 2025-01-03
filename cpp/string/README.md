@@ -1,5 +1,5 @@
 
-Here’s a list of the most commonly used methods of the `std::string` class in C++ along with their purposes:
+Some of the most commonly used methods of the `std::string` class in C++.
 
 * * *
 
@@ -10,14 +10,20 @@ Here’s a list of the most commonly used methods of the `std::string` class in 
     *   Returns the number of characters in the string.
     *   Example:
         
-        `std::string s = "hello"; std::cout << s.length(); // 5`
+        ```
+        std::string s = "hello";
+        std::cout << s.length(); // 5
+        ```
         
 *   **`empty()`**
     
     *   Checks if the string is empty.
     *   Example:
         
-        `std::string s = ""; if (s.empty()) std::cout << "String is empty";`
+        ```
+        std::string s = "";
+        if (s.empty()) std::cout << "String is empty";
+        ```
         
 *   **`clear()`**
     
@@ -178,6 +184,3 @@ Here’s a list of the most commonly used methods of the `std::string` class in 
         `std::string line; std::getline(std::cin, line);`
         
 
-* * *
-
-These methods make `std::string` versatile and powerful for managing and manipulating text in C++.
