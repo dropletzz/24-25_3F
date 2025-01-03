@@ -16,9 +16,13 @@ stringhe: bin-folder
 stringhe: bin-folder
 	g++ 07_numeri-casuali.cpp -o bin/numeri-casuali
 
-esercizi: segnapunti
+esercizi: segnapunti morra-cinese morra-cinese-a-punti
 segnapunti: bin-folder
 	g++ esercizi/segnapunti.cpp -o bin/segnapunti
+morra-cinese: bin-folder
+	g++ esercizi/morra-cinese.cpp -o bin/morra-cinese
+morra-cinese-a-punti: bin-folder
+	g++ esercizi/morra-cinese-a-punti.cpp -o bin/morra-cinese-a-punti
 
 bin-folder:
 	mkdir -p bin
