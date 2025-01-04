@@ -131,7 +131,7 @@ Some of the most commonly used methods of the `std::string` class in C++.
         
 * * *
 
-### 4\. **Substrings**
+### 4\. **Utilities**
 
 *   **`substr()`**
     *   Extracts a substring starting at a specified position and length.
@@ -141,11 +141,6 @@ Some of the most commonly used methods of the `std::string` class in C++.
         std::string s = "hello world";
         std::string sub = s.substr(6, 2); // "wo"
         ```
-        
-
-* * *
-
-### 5\. **Comparison**
 
 *   **`compare()`**
     *   Compares two strings lexicographically.
@@ -156,36 +151,6 @@ Some of the most commonly used methods of the `std::string` class in C++.
         std::string s2 = "abd";
         int result = s1.compare(s2); // -1 (s1 is less than s2)
         ```
-        
-
-* * *
-
-### 6\. **Conversion**
-
-*   **`c_str()`**
-    
-    *   Returns a C-style null-terminated string.
-    *   Example:
-        
-        ```
-        std::string s = "hello";
-        const char* c = s.c_str(); // "hello"
-        ```
-        
-*   **`data()`**
-    
-    *   Similar to `c_str()`, but non-const in C++17+.
-    *   Example:
-        
-        ```
-        std::string s = "hello";
-        const char* d = s.data(); // "hello"
-        ```
-        
-
-* * *
-
-### 7\. **Utilities**
 
 *   **`resize()`**
     
@@ -208,17 +173,5 @@ Some of the most commonly used methods of the `std::string` class in C++.
         ```
         
 
-* * *
 
-### 8\. **Input/Output**
-
-*   **`getline()`**
-    *   Reads an entire line from input (e.g., `cin`).
-    *   Example:
-        
-        ```
-        std::string line;
-        std::getline(std::cin, line);
-        ```
-        
 

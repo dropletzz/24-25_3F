@@ -3,10 +3,11 @@ using namespace std;
 
 int main() {
 
-    string s = "gatto";
-    for (int i = 0; i <= s.length(); i++) {
-        cout << s[i] << endl;
+    string s = "gattopardo";
+    for (int i = 0; i < s.length(); i = i+3) {
+        cout << s[i];
     }
+    cout << endl;
 
     return 0;
 }
