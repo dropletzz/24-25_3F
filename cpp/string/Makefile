@@ -1,7 +1,7 @@
-all: calcolo-output find
+all: calcolo-output intro
 
-find: bin-folder
-	g++ find.cpp -o bin/find
+intro: bin-folder
+	g++ intro.cpp -o bin/intro
 
 calcolo-output: es1 es2 es3 es4 es5 es6 es7 es8
 es1: bin-folder
