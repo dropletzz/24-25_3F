@@ -24,6 +24,10 @@ int main() {
     s = "sono una " + s; // "sono una stringa di prova"
     cout << "Lunghezza dopo la modifica: " << s.length() << endl;
 
+    // per ricevere in input una stringa si usa la funzione getline
+    getline(std::cin, s);
+    cout << "Hai inserito la stringa: " << s << endl;
+
     return 0;
 }
 
