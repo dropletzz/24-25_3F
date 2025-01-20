@@ -3,12 +3,12 @@ Some of the most commonly used methods of the `std::string` class in C++.
 
 * * *
 
-### 1\. **Basic Operations**
+### 1\. **Operazioni base**
 
 *   **`length()` / `size()`**
     
-    *   Returns the number of characters in the string.
-    *   Example:
+    *   Restituisce il numero di caratteri della stringa.
+    *   Esempio:
         
         ```
         std::string s = "hello";
@@ -17,8 +17,8 @@ Some of the most commonly used methods of the `std::string` class in C++.
         
 *   **`operator[]` / `at()`**
     
-    *   Accesses a character at a specified position (bounds-checked for `at()`).
-    *   Example:
+    *   Restituisce il carattere della striga ad una determinata posizione
+    *   Esempio:
         
         ```
         std::string s = "hello";
@@ -28,8 +28,8 @@ Some of the most commonly used methods of the `std::string` class in C++.
         
 *   **`front()` / `back()`**
     
-    *   Access the first or last character of the string.
-    *   Example:
+    *   Restituisce il primo (front) o l'ultimo (back) cacattere della stringa
+    *   Esempio:
         
         ```
         std::string s = "hello";
@@ -39,33 +39,33 @@ Some of the most commonly used methods of the `std::string` class in C++.
 
 *   **`empty()`**
     
-    *   Checks if the string is empty.
-    *   Example:
+    *   Controlla se la stringa e' vuota.
+    *   Esempio:
         
         ```
         std::string s = "";
-        if (s.empty()) std::cout << "String is empty";
+        if (s.empty()) std::cout << "La stringa e' vuota";
         ```
         
 *   **`clear()`**
     
-    *   Erases the content of the string.
-    *   Example:
+    *   Cancella il contenuto della stringa.
+    *   Esempio:
         
         ```
         std::string s = "hello";
-        s.clear(); // Now s is empty
+        s.clear(); // Adesso s e' vuota
         ```
         
 
 * * *
 
-### 2\. **Modification**
+### 2\. **Modifica**
         
 *   **`append()` / `+=`**
     
-    *   Appends a string or character to the current string.
-    *   Example:
+    *   Aggiunge una stringa in fondo ad un'altra stinga.
+    *   Esempio:
         
         ``
         std::string s = "hello";
@@ -75,8 +75,8 @@ Some of the most commonly used methods of the `std::string` class in C++.
         
 *   **`insert()`**
     
-    *   Inserts characters at a specific position.
-    *   Example:
+    *   Inserisce una stringa in un'altra, ad una specifica posizione.
+    *   Esempio:
         
         ```
         std::string s = "hello world";
@@ -85,33 +85,22 @@ Some of the most commonly used methods of the `std::string` class in C++.
         
 *   **`erase()`**
     
-    *   Removes characters from the string.
-    *   Example:
+    *   Cancella caratteri da una stringa
+    *   Esempio:
         
         ```
         std::string s = "hello world";
         s.erase(5, 6); // "hello"
         ```
         
-*   **`replace()`**
-    
-    *   Replaces part of the string with another string.
-    *   Example:
-        
-        ```
-        std::string s = "hello world";
-        s.replace(6, 5, "C++"); // "hello C++"
-        ```
-        
-
 * * *
 
-### 3\. **Searching**
+### 3\. **Utilita'**
 
 *   **`find()`**
     
-    *   Finds the first occurrence of a substring or character.
-    *   Example:
+    *   Trova la prima occorrenza di una stringa dentro un'altra stringa.
+    *   Esemio:
         
         ```
         std::string s = "hello world";
@@ -121,21 +110,17 @@ Some of the most commonly used methods of the `std::string` class in C++.
         
 *   **`rfind()`**
     
-    *   Finds the last occurrence of a substring or character.
-    *   Example:
+    *   Trova la'ultima occorrenza di una stringa dentro un'altra stringa.
+    *   Esempio:
         
         ```
         std::string s = "hello world";
         size_t pos = s.rfind("o"); // 7
         ```
         
-* * *
-
-### 4\. **Utilities**
-
 *   **`substr()`**
-    *   Extracts a substring starting at a specified position and length.
-    *   Example:
+    *   Estrae una sottostringa data una posizione di partenza ed una lunghezza.
+    *   Esempio:
         
         ```
         std::string s = "hello world";
@@ -143,33 +128,13 @@ Some of the most commonly used methods of the `std::string` class in C++.
         ```
 
 *   **`compare()`**
-    *   Compares two strings lexicographically.
-    *   Example:
+    *   Confronta due stringhe in 
+    *   Esempio:
         
         ```
         std::string s1 = "abc";
         std::string s2 = "abd";
         int result = s1.compare(s2); // -1 (s1 is less than s2)
-        ```
-
-*   **`resize()`**
-    
-    *   Resizes the string to a specified length.
-    *   Example:
-        
-        ```
-        std::string s = "hello";
-        s.resize(3); // "hel"
-        ```
-        
-*   **`swap()`**
-    
-    *   Swaps the content of two strings.
-    *   Example:
-        
-        ```
-        std::string s1 = "hello", s2 = "world";
-        s1.swap(s2); // s1 = "world", s2 = "hello"
         ```
         
 
