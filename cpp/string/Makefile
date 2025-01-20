@@ -1,4 +1,4 @@
-all: calcolo-output intro find substr
+all: calcolo-output intro find substr find-e-substr
 
 intro: bin-folder
 	g++ 01_intro.cpp -o bin/intro
@@ -6,6 +6,8 @@ find: bin-folder
 	g++ 02_find.cpp -o bin/find
 substr: bin-folder
 	g++ 03_substr.cpp -o bin/substr
+find-e-substr: bin-folder
+	g++ esercizi/find-e-substr.cpp -o bin/find-e-substr
 
 calcolo-output: es1 es2 es3 es4 es5 es6 es7 es8
 es1: bin-folder
