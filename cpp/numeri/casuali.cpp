@@ -1,10 +1,11 @@
 #include <iostream>
-#include <ctime>
+#include <random>
 using namespace std;
 
 int main() {
     // inizializza il generatore di numeri casuali
-    srand(time(NULL));
+    random_device rd;
+    srand(rd());
 
     // numero casuale compreso tra 0 e 2
     int numero_a_caso = rand() % 3;
