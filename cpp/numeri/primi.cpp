@@ -4,7 +4,7 @@ using namespace std;
 
 // funzione che riceve come argomento un numero intero (num)
 // e restituisce true se il numero e' primo, altrimenti
-// restituisce false (n deve essere un numero positivo)
+// restituisce false (num deve essere >= 0)
 bool controllo_primo(int num) {
     if (num == 0) return false; // zero non e' un numero primo
 
