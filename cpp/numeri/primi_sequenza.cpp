@@ -19,18 +19,24 @@ bool controllo_primo_veloce(int num, int primi[], int len) {
     return true;
 }
 
-#define SIZE 1000
+#define MAX_SIZE 4096
 // questo programma riceve in input un numero n e riempie
 // un array con i primi n numeri primi (partendo da 1)
 int main() {
-    int arr[SIZE]; // array da riempire
-    int c = 0; // quanti numeri sono stati inseriti
+    int arr[MAX_SIZE]; // array da riempire 
+    int i = 0; // indice del prossimo numero primo da inserire nell'array
     int x = 1; // numero che, se e' primo, viene inserito nell'array
+               //
+    int n; cout << "Inserisci n: "; cin >> n;
+    if (n > MAX_SIZE) {
+        cout << "n deve essere <= " << MAX_SIZE << endl;
+        return 1;
+    }
 
-    while (c < SIZE) {
-        if (controllo_primo_veloce(x, arr, c)) {
-            arr[c] = x;
-            c++;
+    while (i < SIZE) {
+        if (controllo_primo_veloce(x, arr, i)) {
+            arr[i] = x;
+            i++;
         }
         x++;
     }
