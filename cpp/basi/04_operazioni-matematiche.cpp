@@ -15,10 +15,9 @@ int main() {
     // la parte dopo la virgola perche' x e y sono int
     float divisione = x / y; // 2
 
-    // converto x in un float (questa operazione si chiama typecasting)
-    float xx = (float) x;
-    // basta che uno dei due sia un float e il risultato non e' piu' arrotondato
-    divisione = xx / y; // 2.666
+    // converto x in un float prima di fare la divisione
+    // in questo modo il risultato non viene arrotondato
+    divisione = (float)x / y; // 2.666
 
     // posso combinare le operazioni matematiche in espressioni complesse
     float voto1 = 9;
@@ -28,7 +27,7 @@ int main() {
     // NOTA: e' importante usare le parentesi, altrimenti il risultato
     // potrebbe non essere quello desiderato
 
-    // operatore modulo: il resto della divisione
+    // operatore modulo: calcola il resto della divisione
     risultato = x % y; // 2 (il resto ottenuto dividendo 8 per 3)
 
     return 0;
