@@ -15,6 +15,12 @@ int main() {
     numero_a_caso = 5 + (rand() % 6);
     cout << numero_a_caso << endl;
 
+    // riempi un array con numeri casuali tra 0 e 99
+    int a[10];
+    for (int i = 0; i<10; i++) {
+        a[i] = rand() % 100;
+    }
+
     return 0;
 }
 
