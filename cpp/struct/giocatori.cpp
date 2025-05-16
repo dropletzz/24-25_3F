@@ -89,19 +89,19 @@ void stampa(Giocatore arr[], int dim) {
 void inserisci_giocatori_di_test(Giocatore arr[]) {
     Giocatore g1, g2, g3;
 
-    g1.nome = "Cristiano Ronaldo";
-    g1.eta = 40;
-    g1.gol = 23;
-    g1.assist = 3;
-    g1.partite = 28;
-    g1.squadra = "Al Nassr";
+    g1.nome = "Lionel Messi";
+    g1.eta = 37;
+    g1.gol = 5;
+    g1.assist = 2;
+    g1.partite = 8;
+    g1.squadra = "Inter Miami";
 
-    g2.nome = "Lionel Messi";
-    g2.eta = 37;
-    g2.gol = 5;
-    g2.assist = 2;
-    g2.partite = 8;
-    g2.squadra = "Inter Miami";
+    g2.nome = "Cristiano Ronaldo";
+    g2.eta = 40;
+    g2.gol = 23;
+    g2.assist = 3;
+    g2.partite = 28;
+    g2.squadra = "Al Nassr";
 
     g3.nome = "Mkhitaryan";
     g3.eta = 36;
@@ -124,7 +124,7 @@ int main() {
     int scelta;
     do {
         cout << "\nMENU:" << endl;
-        cout << "1 -> inserisci i dati dei giocatori" << endl;
+        cout << "1 -> stampa i giocatori" << endl;
         cout << "2 -> calcola l'eta media" << endl;
         cout << "3 -> giocatore che ha fatto piu' gol" << endl;
         cout << "4 -> giocatore che ha giocato meno partite" << endl;
@@ -136,7 +136,7 @@ int main() {
 
         switch (scelta) {
             case 1: {
-                // DA FARE
+                stampa(arr, dim);
                 break;
             }
             case 2: {
