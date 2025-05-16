@@ -27,7 +27,7 @@ void bubble_sort_semplificato(int v[], int len) {
     }
 }
 
-// da verificare la correttezza di questo algoritmo
+// !!!WARNING!!! la correttezza di questo algoritmo e' da verificare
 void basaglia_sort(int v[], int len) {
     for (int fine = len-1; fine > 0; fine--) {
         for (int i = 0; i < fine; i++) {
